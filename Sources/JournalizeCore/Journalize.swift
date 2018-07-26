@@ -10,6 +10,7 @@ import Foundation
 public final class Journalize {
 
 	public static func run(with arguments: [String] = CommandLine.arguments) throws {
-		// DO SOMETHING WITH THE ARGUMENTS HERE
+		let command = try Command(arguments: arguments)
+		print(command.description)
 	}
 }
