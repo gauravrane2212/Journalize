@@ -8,13 +8,8 @@
 import Foundation
 
 public final class Journalize {
-	private let arguments: [String]
 
-	public init(arguments: [String] = CommandLine.arguments) {
-		self.arguments = arguments
-	}
-
-	public func run() throws {
-		print("Setup is working!")
+	public static func run(with arguments: [String] = CommandLine.arguments) throws {
+		// DO SOMETHING WITH THE ARGUMENTS HERE
 	}
 }

@@ -1,9 +1,7 @@
 import JournalizeCore
 
-let tool = Journalize()
-
 do {
-	try tool.run()
+	try Journalize.run()
 } catch {
 	print("Whoops! An error occured: \(error)")
 }
