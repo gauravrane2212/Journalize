@@ -11,6 +11,7 @@ public final class Journalize {
 
 	public static func run(with arguments: [String] = CommandLine.arguments) throws {
 		let command = try Command(arguments: arguments)
-		print(command.description)
+		let executableTask: Executable = command.getExecutableTask(arguments)
+		executableTask.execute()
 	}
 }

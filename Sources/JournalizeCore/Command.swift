@@ -22,6 +22,15 @@ extension Command {
 		}
 	}
 
+	var getExecutableTask: ([String]) -> Executable {
+		switch self {
+		case .new:
+			return NewTask.init
+		case .help:
+			return HelpTask.init
+		}
+	}
+
 	init(arguments: [String], index: Int = 1) throws {
 		guard let commandString = arguments.element(at: index) else {
 			self = .help
