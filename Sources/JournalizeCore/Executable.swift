@@ -8,5 +8,5 @@
 import Foundation
 
 public protocol Executable {
-	func execute()
+	func execute() throws
 }

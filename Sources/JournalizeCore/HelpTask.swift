@@ -8,7 +8,7 @@
 import Foundation
 
 internal final class HelpTask: Task, Executable {
-	func execute() {
+	func execute() throws {
 		// EXECUTE HELP COMMAND LOGIC
 		print("HELP TASK LOGIC")
 	}

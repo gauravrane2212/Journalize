@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import Files
 
 internal enum Command: String {
 	case new
@@ -22,7 +23,7 @@ extension Command {
 		}
 	}
 
-	var getExecutableTask: ([String]) -> Executable {
+	var getExecutableTask: (Folder, [String]) -> Executable {
 		switch self {
 		case .new:
 			return NewTask.init

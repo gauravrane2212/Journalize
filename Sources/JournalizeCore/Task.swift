@@ -6,11 +6,14 @@
 //
 
 import Foundation
+import Files
 
 public class Task {
+	let rootFolder: Folder
 	let arguments: [String]
 
-	init(arguments: [String]) {
+	init(rootFolder: Folder, arguments: [String]) {
+		self.rootFolder = rootFolder
 		self.arguments = arguments
 	}
 }
