@@ -14,7 +14,7 @@ internal final class NewTask: Task, Executable {
 		}
 
 		try rootFolder.createFileIfNeeded(withName: "\(nameArgument).txt")
-		print("🎊 \"\(nameArgument)\" journal sucessfully created!")
+		printer.output("🎊 \"\(nameArgument)\" journal sucessfully created!")
 	}
 }
 

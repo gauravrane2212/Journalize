@@ -11,9 +11,11 @@ import Files
 public class Task {
 	let rootFolder: Folder
 	let arguments: [String]
+	let printer: Printer
 
-	init(rootFolder: Folder, arguments: [String]) {
+	init(rootFolder: Folder, arguments: [String], printer: Printer) {
 		self.rootFolder = rootFolder
 		self.arguments = arguments
+		self.printer = printer
 	}
 }

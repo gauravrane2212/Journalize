@@ -23,7 +23,7 @@ extension Command {
 		}
 	}
 
-	var getExecutableTask: (Folder, [String]) -> Executable {
+	var getExecutableTask: (Folder, [String], Printer) -> Executable {
 		switch self {
 		case .new:
 			return NewTask.init
