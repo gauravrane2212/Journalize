@@ -1,7 +1,9 @@
+import Foundation
 import JournalizeCore
 
 do {
 	try Journalize.run()
 } catch {
-	print("Whoops! An error occured: \(error)")
+	FileHandle.standardError.write("\(error)\n".data(using: .utf8)!)
+	exit(1)
 }
