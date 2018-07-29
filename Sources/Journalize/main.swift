@@ -1,9 +1,9 @@
+import Foundation
 import JournalizeCore
 
-let tool = Journalize()
-
 do {
-	try tool.run()
+	try Journalize.run()
 } catch {
-	print("Whoops! An error occured: \(error)")
+	FileHandle.standardError.write("\(error)\n".data(using: .utf8)!)
+	exit(1)
 }
