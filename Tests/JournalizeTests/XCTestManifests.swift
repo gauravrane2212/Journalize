@@ -3,6 +3,7 @@ import XCTest
 extension JournalizeTests {
     static let __allTests = [
         ("testCreatingNewJournal", testCreatingNewJournal),
+        ("testCreatingSameJournalTwice", testCreatingSameJournalTwice),
     ]
 }
 
