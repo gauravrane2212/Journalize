@@ -18,6 +18,9 @@ let package = Package(
             dependencies: ["JournalizeCore"]),
 				.target(
 						name: "JournalizeCore",
-						dependencies: ["Files"])
+						dependencies: ["Files"]),
+				.testTarget(
+					name: "JournalizeTests",
+					dependencies: ["JournalizeCore", "Files"])
     ]
 )
